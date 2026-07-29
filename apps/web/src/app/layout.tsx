@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
 import Navigation from '@/components/Navigation';
+import InteractiveNeuralBackground from '@/components/InteractiveNeuralBackground';
 
 export const metadata: Metadata = {
   title: 'Exam Oracle AI - Universal Examination Analytics & Practice Platform',
@@ -14,9 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className="font-sans antialiased bg-[#0B0F19] text-gray-100 min-h-screen">
-        <Navigation />
-        {children}
+      <body className="font-sans antialiased bg-[#0C0F0E] text-slate-100 min-h-screen relative selection:bg-emerald-500 selection:text-white">
+        <InteractiveNeuralBackground />
+        <div className="relative z-10">
+          <Navigation />
+          {children}
+        </div>
       </body>
     </html>
   );
