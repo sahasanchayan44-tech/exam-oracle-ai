@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@exam-oracle/shared-types": "workspace:*",
+    "@exam-oracle/shared-types": "file:../../packages/shared-types",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "d3": "^7.9.0",
