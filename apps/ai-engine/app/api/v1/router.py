@@ -10,6 +10,7 @@ from app.api.v1.analytics_router import router as analytics_router
 from app.api.v1.synthesis_router import router as synthesis_router
 from app.api.v1.pipeline_router import router as pipeline_router
 from app.api.v1.statistical_intelligence_router import router as statistical_intelligence_router
+from app.api.v1.research_automl_router import router as research_automl_router
 
 router = APIRouter()
 
@@ -37,3 +38,4 @@ router.include_router(analytics_router)
 router.include_router(synthesis_router)
 router.include_router(pipeline_router)
 router.include_router(statistical_intelligence_router)
+router.include_router(research_automl_router)
