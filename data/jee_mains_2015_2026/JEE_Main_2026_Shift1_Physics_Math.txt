@@ -1,0 +1,56 @@
+================================================================================
+JOINT ENTRANCE EXAMINATION (JEE MAIN 2026) - SHIFT 1
+SUBJECTS: PHYSICS, CHEMISTRY, MATHEMATICS
+================================================================================
+
+Q1. [Physics - Kinematics]
+A particle is projected from the ground with an initial velocity of 20 m/s at an angle of 30 degrees to the horizontal. Calculate the maximum height reached and the total time of flight. (Take g = 10 m/s^2)
+Options:
+(A) Height = 5 m, Time = 2 s
+(B) Height = 10 m, Time = 4 s
+(C) Height = 15 m, Time = 3 s
+(D) Height = 20 m, Time = 2 s
+
+Q2. [Physics - Modern Physics]
+In a photoelectric experiment, light of wavelength 400 nm falls on a metal surface having work function 2.0 eV. Calculate the maximum kinetic energy of emitted photoelectrons. (Take hc = 1240 eV.nm)
+Options:
+(A) 1.1 eV
+(B) 2.2 eV
+(C) 0.5 eV
+(D) 3.1 eV
+
+Q3. [Chemistry - Organic Chemistry]
+Which of the following compounds undergoes SN1 reaction at the fastest rate when reacted with aqueous NaOH?
+Options:
+(A) Methyl chloride
+(B) Ethyl chloride
+(C) Isopropyl chloride
+(D) Tert-butyl chloride
+
+Q4. [Chemistry - Chemical Thermodynamics]
+For the reaction N2(g) + 3H2(g) -> 2NH3(g) at 298 K, Delta H = -92.4 kJ/mol. Calculate the standard internal energy change Delta U for the reaction. (R = 8.314 J/mol.K)
+Options:
+(A) -87.4 kJ/mol
+(B) -97.4 kJ/mol
+(C) -92.4 kJ/mol
+(D) -82.4 kJ/mol
+
+Q5. [Mathematics - Matrices & Determinants]
+Let A be a 3x3 non-singular matrix such that A * adj(A) = 10 I, where I is the identity matrix. What is the value of |det(adj(A))|?
+Options:
+(A) 10
+(B) 100
+(C) 1000
+(D) 10000
+
+Q6. [Mathematics - Integral Calculus]
+Evaluate the definite integral I = int_0^(pi/2) [ (sin(x))^5 / ( (sin(x))^5 + (cos(x))^5 ) ] dx.
+Options:
+(A) pi/2
+(B) pi/4
+(C) pi/8
+(D) pi/6
+
+================================================================================
+END OF JEE MAIN 2026 PAPER SAMPLE
+================================================================================

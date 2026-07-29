@@ -1,0 +1,146 @@
+{
+  "exam": "JEE_MAIN",
+  "year_range": "2015-2026",
+  "total_papers": 12,
+  "subjects": ["Physics", "Chemistry", "Mathematics"],
+  "papers": [
+    {
+      "year": 2015,
+      "shift": "Shift-1",
+      "subject": "Physics",
+      "questions": [
+        {
+          "question_id": "JEE_2015_PHY_Q1",
+          "content": "A uniform wire of length L and radius r has resistance R. It is stretched to double its length. The new resistance of the wire will be:",
+          "options": ["(A) R", "(B) 2R", "(C) 4R", "(D) R/2"],
+          "correct_option": "C",
+          "chapter": "Current Electricity",
+          "concept": "Resistivity & Wire Extension",
+          "bloom_taxonomy": "APPLY",
+          "difficulty": 0.55,
+          "estimated_solving_time_min": 2.5,
+          "marks": 4
+        },
+        {
+          "question_id": "JEE_2015_MATH_Q1",
+          "content": "The area bounded by the curve y = x^2 and the line y = 4 is:",
+          "options": ["(A) 16/3", "(B) 32/3", "(C) 8/3", "(D) 64/3"],
+          "correct_option": "B",
+          "chapter": "Integral Calculus",
+          "concept": "Area Under Curve",
+          "bloom_taxonomy": "APPLY",
+          "difficulty": 0.60,
+          "estimated_solving_time_min": 3.0,
+          "marks": 4
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "shift": "Shift-2",
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "question_id": "JEE_2018_CHEM_Q1",
+          "content": "Which of the following compounds exhibits optical isomerism?",
+          "options": ["(A) [Co(NH3)6]3+", "(B) cis-[Co(en)2Cl2]+", "(C) trans-[Co(en)2Cl2]+", "(D) [Pt(NH3)4]2+"],
+          "correct_option": "B",
+          "chapter": "Coordination Compounds",
+          "concept": "Chirality & Isomerism in Complexes",
+          "bloom_taxonomy": "ANALYZE",
+          "difficulty": 0.70,
+          "estimated_solving_time_min": 3.5,
+          "marks": 4
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "shift": "Shift-1",
+      "subject": "Physics",
+      "questions": [
+        {
+          "question_id": "JEE_2021_PHY_Q1",
+          "content": "A projectile is thrown with speed v at angle theta with horizontal. The radius of curvature of path at highest point is:",
+          "options": ["(A) v^2 cos^2(theta) / g", "(B) v^2 / g", "(C) v^2 sin^2(theta) / g", "(D) v^2 cos(theta) / g"],
+          "correct_option": "A",
+          "chapter": "Kinematics & Motion in 2D",
+          "concept": "Radius of Curvature at Trajectory Peak",
+          "bloom_taxonomy": "ANALYZE",
+          "difficulty": 0.75,
+          "estimated_solving_time_min": 4.0,
+          "marks": 4
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "shift": "Shift-1",
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "question_id": "JEE_2024_MATH_Q1",
+          "content": "Let f(x) = |x - 1| + |x - 2|. The number of points where f(x) is non-differentiable is:",
+          "options": ["(A) 0", "(B) 1", "(C) 2", "(D) 3"],
+          "correct_option": "C",
+          "chapter": "Limits, Continuity & Differentiability",
+          "concept": "Modulus Function Differentiability Points",
+          "bloom_taxonomy": "UNDERSTAND",
+          "difficulty": 0.62,
+          "estimated_solving_time_min": 3.0,
+          "marks": 4
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "shift": "Shift-2",
+      "subject": "Physics",
+      "questions": [
+        {
+          "question_id": "JEE_2025_PHY_Q1",
+          "content": "In a Young's Double Slit Experiment, slit separation is 0.5 mm and wavelength is 600 nm. Distance to screen is 1 m. The fringe width beta is:",
+          "options": ["(A) 1.2 mm", "(B) 0.6 mm", "(C) 2.4 mm", "(D) 1.8 mm"],
+          "correct_option": "A",
+          "chapter": "Wave Optics",
+          "concept": "YDSE Fringe Width Calculation",
+          "bloom_taxonomy": "APPLY",
+          "difficulty": 0.58,
+          "estimated_solving_time_min": 2.5,
+          "marks": 4
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "shift": "Shift-1",
+      "subject": "Physics & Math",
+      "questions": [
+        {
+          "question_id": "JEE_2026_PHY_Q1",
+          "content": "A particle moves in a magnetic field B under Lorentz force F = q(v x B). If kinetic energy remains constant, the work done by the magnetic force after time t is:",
+          "options": ["(A) qvBt", "(B) 0 J", "(C) (1/2)m v^2", "(D) qvB/t"],
+          "correct_option": "B",
+          "chapter": "Magnetic Effects of Current",
+          "concept": "Work Done by Magnetic Force",
+          "bloom_taxonomy": "REMEMBER",
+          "difficulty": 0.45,
+          "estimated_solving_time_min": 1.5,
+          "marks": 4
+        },
+        {
+          "question_id": "JEE_2026_MATH_Q1",
+          "content": "Evaluate the definite integral int_0^(pi/2) [ sin(x) / (sin(x) + cos(x)) ] dx.",
+          "options": ["(A) pi/2", "(B) pi/4", "(C) pi/8", "(D) 0"],
+          "correct_option": "B",
+          "chapter": "Integral Calculus",
+          "concept": "Symmetry Property of Definite Integrals",
+          "bloom_taxonomy": "APPLY",
+          "difficulty": 0.60,
+          "estimated_solving_time_min": 3.0,
+          "marks": 4
+        }
+      ]
+    }
+  ]
+}
