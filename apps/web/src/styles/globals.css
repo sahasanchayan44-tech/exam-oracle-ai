@@ -4,14 +4,14 @@
 
 @layer base {
   :root {
-    --background: 222 47% 7%;
-    --foreground: 210 40% 98%;
-    --border: 217 19% 18%;
-    --input: 217 19% 18%;
-    --ring: 224 76% 48%;
+    --background: 150 15% 5%;
+    --foreground: 150 10% 96%;
+    --border: 150 15% 16%;
+    --input: 150 15% 16%;
+    --ring: 158 64% 42%;
   }
 
   body {
-    @apply bg-[#0B0F19] text-gray-100 antialiased min-h-screen selection:bg-indigo-500 selection:text-white;
+    @apply bg-[#0C0F0E] text-slate-100 antialiased min-h-screen selection:bg-emerald-500 selection:text-white;
   }
 }

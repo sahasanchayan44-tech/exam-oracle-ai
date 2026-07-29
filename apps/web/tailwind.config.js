@@ -9,24 +9,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        border: "#222E28",
+        input: "#222E28",
+        ring: "#10B981",
+        background: "#0C0F0E",
+        foreground: "#F3F4F6",
         primary: {
-          DEFAULT: "#4F46E5", // Indigo-600
+          DEFAULT: "#10B981", // Mint Emerald
           foreground: "#FFFFFF",
         },
-        secondary: {
-          DEFAULT: "#0EA5E9", // Sky-500
-          foreground: "#FFFFFF",
+        accent: {
+          DEFAULT: "#F59E0B", // Warm Gold
+          foreground: "#000000",
         },
-        oracle: {
-          dark: "#0B0F19",
-          card: "#111827",
-          border: "#1F2937",
-          accent: "#6366F1",
+        onyx: {
+          bg: "#0C0F0E",
+          card: "#141A17",
+          border: "#222E28",
+          emerald: "#10B981",
           gold: "#F59E0B"
         }
       },
