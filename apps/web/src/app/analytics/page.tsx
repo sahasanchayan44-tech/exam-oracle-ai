@@ -70,7 +70,7 @@ export default function AnalyticsPage() {
           <div className="flex justify-between items-center">
             <h3 className="text-lg font-bold text-gray-200 flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-indigo-400" />
-              Bayesian Topic Probability Distributions $P(\text{Topic})$
+              Bayesian Topic Probability Distributions P(Topic)
             </h3>
             <span className="text-xs font-semibold text-gray-400">95% Confidence Bounds</span>
           </div>
