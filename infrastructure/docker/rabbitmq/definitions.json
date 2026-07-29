@@ -1,0 +1,100 @@
+{
+  "rabbit_version": "3.13.0",
+  "users": [
+    {
+      "name": "oracle_mq_user",
+      "password_hash": "mq_secure_password_2026",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": ["administrator"]
+    }
+  ],
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "oracle_mq_user",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  "queues": [
+    {
+      "name": "paper_ingestion_queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "nlp_extraction_queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "probability_calculation_queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "question_generation_queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ],
+  "exchanges": [
+    {
+      "name": "exam_oracle_events",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": [
+    {
+      "source": "exam_oracle_events",
+      "vhost": "/",
+      "destination": "paper_ingestion_queue",
+      "destination_type": "queue",
+      "routing_key": "paper.uploaded",
+      "arguments": {}
+    },
+    {
+      "source": "exam_oracle_events",
+      "vhost": "/",
+      "destination": "nlp_extraction_queue",
+      "destination_type": "queue",
+      "routing_key": "paper.parsed",
+      "arguments": {}
+    },
+    {
+      "source": "exam_oracle_events",
+      "vhost": "/",
+      "destination": "probability_calculation_queue",
+      "destination_type": "queue",
+      "routing_key": "nlp.completed",
+      "arguments": {}
+    },
+    {
+      "source": "exam_oracle_events",
+      "vhost": "/",
+      "destination": "question_generation_queue",
+      "destination_type": "queue",
+      "routing_key": "practice.requested",
+      "arguments": {}
+    }
+  ]
+}

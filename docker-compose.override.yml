@@ -1,0 +1,23 @@
+version: '3.8'
+
+# Development overrides for live reloading and volume mounting
+services:
+  ai-engine:
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./apps/ai-engine/app:/app/app
+    environment:
+      - LOG_LEVEL=debug
+
+  api-gateway:
+    command: pnpm run start:dev
+    volumes:
+      - ./apps/api-gateway/src:/app/src
+    environment:
+      - LOG_LEVEL=debug
+
+  web:
+    command: pnpm run dev
+    volumes:
+      - ./apps/web/src:/app/src
+      - ./apps/web/public:/app/public

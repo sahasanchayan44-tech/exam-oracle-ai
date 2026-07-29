@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+.pnpm-store
+venv
+.venv
+__pycache__
+*.pyc
+*.pyo
+
+# Build & Output Directories
+.next
+dist
+build
+coverage
+*.egg-info
+.turbo
+
+# Environment & Secrets
+.env
+.env.local
+.env.production
+*.pem
+*.key
+certs/
+
+# Database & Persistent Volume Mounts
+*.sqlite
+*.db
+pgdata/
+qdrant_storage/
+redis_data/
+minio_data/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# IDE & OS
+.DS_Store
+.vscode/
+.idea/
+*.swp

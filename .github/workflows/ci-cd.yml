@@ -1,0 +1,90 @@
+name: Enterprise CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint-and-typecheck:
+    name: Lint & Typecheck Monorepo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8.15.4
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run ESLint & Type Check
+        run: pnpm run lint
+
+  python-ai-tests:
+    name: Test FastAPI AI Engine
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          cd apps/ai-engine
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest flake8 black mypy
+
+      - name: Run Python Code Quality Checks
+        run: |
+          cd apps/ai-engine
+          flake8 app
+          black --check app
+          mypy app
+
+      - name: Run PyTest
+        run: |
+          cd apps/ai-engine
+          pytest --cov=app tests/
+
+  nestjs-gateway-tests:
+    name: Test NestJS API Gateway
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8.15.4
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Run NestJS Unit Tests
+        run: |
+          pnpm --filter api-gateway test
