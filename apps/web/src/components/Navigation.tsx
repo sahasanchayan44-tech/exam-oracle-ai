@@ -12,21 +12,26 @@ export default function Navigation() {
     { name: 'Dashboard', href: '/', icon: BarChart2 },
     { name: 'Analytics', href: '/analytics', icon: Cpu },
     { name: 'Generator', href: '/generator', icon: Sparkles },
-    { name: 'Student', href: '/student', icon: UserCheck },
+    { name: 'Student Plan', href: '/student', icon: UserCheck },
     { name: 'Explainability', href: '/explainability', icon: BookOpen },
-    { name: 'Admin', href: '/admin', icon: ShieldCheck },
+    { name: 'Admin Panel', href: '/admin', icon: ShieldCheck },
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-800/60 bg-[#0B0F19]/80 backdrop-blur-xl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-15 flex items-center justify-between">
+    <header className="sticky top-0 z-50 w-full border-b border-slate-800/80 bg-[#0B0F19]/90 backdrop-blur-xl shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-3 group">
-          <div className="w-8 h-8 rounded-lg bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 font-bold text-xs group-hover:border-indigo-500/60 transition-colors">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-sky-500 flex items-center justify-center text-white font-extrabold text-sm shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
             EO
           </div>
-          <span className="text-base font-bold text-white tracking-tight">
-            Exam Oracle <span className="text-indigo-400 font-medium">AI</span>
-          </span>
+          <div className="flex flex-col">
+            <span className="text-lg font-extrabold text-white tracking-tight leading-none">
+              Exam Oracle <span className="text-indigo-400 font-semibold">AI</span>
+            </span>
+            <span className="text-[11px] text-slate-400 font-medium tracking-wide">
+              Intelligence & Practice Engine
+            </span>
+          </div>
         </Link>
 
         <nav className="flex items-center space-x-1 sm:space-x-2">
@@ -37,14 +42,14 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 ${
+                className={`flex items-center space-x-2 px-3.5 py-2 rounded-xl text-sm font-semibold transition-all duration-200 ${
                   isActive
-                    ? 'bg-indigo-500/10 text-indigo-400 border border-indigo-500/30'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
+                    ? 'bg-indigo-600/20 text-indigo-300 border border-indigo-500/30 shadow-inner'
+                    : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
                 }`}
               >
-                <Icon className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">{item.name}</span>
+                <Icon className="w-4 h-4" />
+                <span className="hidden md:inline">{item.name}</span>
               </Link>
             );
           })}
